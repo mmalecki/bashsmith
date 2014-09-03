@@ -1,5 +1,5 @@
 # bashsmith
-The dumbest static site generator ever.
+The bestest static site generator ever.
 
 You need a bunch of `*.md` files in your current directory, `header.html` for
 everything that goes in front of your content, `footer.html` for the rear
