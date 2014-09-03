@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+set -e
+
+posts=$(ls *.md)
+tmp_output='index.tmp.html'
+output='index.html'
+
+cat header.html >> $tmp_output
+
+for post in $posts; do
+  echo "Building $post..."
+  marked < $post >> $tmp_output
+done
+
+cat footer.html >> $tmp_output
+
+mv $tmp_output $output
